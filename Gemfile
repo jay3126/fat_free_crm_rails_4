@@ -36,7 +36,7 @@ group :development do
   unless ENV["CI"]
     gem 'thin'
     gem 'quiet_assets'
-    gem 'capistrano', '~> 2'
+    gem 'capistrano', '~> 3.1.0'
     gem 'capistrano_colors'
     gem 'guard'
     gem 'guard-rspec'
@@ -73,9 +73,9 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier',     '>= 1.0.3'
+  gem 'sass-rails',   '~> 4.0.1'
+  gem 'coffee-rails', '~> 4.0.1'
+  gem 'uglifier',     '~> 2.4.0'
   gem 'execjs'
   gem 'therubyracer', :platform => :ruby unless ENV["CI"]
 end

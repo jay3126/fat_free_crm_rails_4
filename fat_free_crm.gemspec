@@ -14,18 +14,19 @@ Gem::Specification.new do |gem|
   gem.required_ruby_version = '>= 1.9'
   gem.license = 'MIT'
 
-  gem.add_dependency 'rails',               '~> 3.2.12'
-  gem.add_dependency 'jquery-rails',        '~> 2.1.4' # pegs us to jQuery 1.8
+  #gem.add_dependency 'rails',               '~> 3.2.12'
+  gem.add_dependency 'rails',               '~> 4.0.3'
+  gem.add_dependency 'jquery-rails' #,        '~> 2.1.4' # pegs us to jQuery 1.8
   gem.add_dependency 'select2-rails'
-  gem.add_dependency 'simple_form',         '~> 2.0.1'
+  gem.add_dependency 'simple_form',         '~> 3.0.1'
   gem.add_dependency 'will_paginate'
   gem.add_dependency 'paperclip'
   # Manually added paperclip gem dependency "cocaine" in order to fix load error: "no such file to load -- cocaine"
   gem.add_dependency 'cocaine'
-  gem.add_dependency 'paper_trail',         '~> 2.7.0' # not ready for v3 yet
-  gem.add_dependency 'authlogic',           '3.1.0'
-  gem.add_dependency 'acts_as_commentable', '~> 3.0.1'
-  gem.add_dependency 'acts-as-taggable-on', '~> 2.3.3'
+  gem.add_dependency 'paper_trail'#,         '~> 2.7.0' # not ready for v3 yet
+  gem.add_dependency 'authlogic',           '3.4.0'
+  gem.add_dependency 'acts_as_commentable', '~> 4.0.1'
+  gem.add_dependency 'acts-as-taggable-on', '~> 3.0.1'
   gem.add_dependency 'dynamic_form'
   gem.add_dependency 'haml',                '~> 3'
   gem.add_dependency 'sass',                '~> 3'
