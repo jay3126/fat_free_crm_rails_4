@@ -85,6 +85,6 @@ gem 'turbo-sprockets-rails3'
 gem 'rails-observers'
 gem 'paper_trail', '~> 3.0.0'
 gem "protected_attributes", "~> 1.0.5"
-gem "i18n", "~> 0.6.9"
+gem "i18n", :git => 'git://github.com/jay3126/i18n-custom.git'
 gem "rails-i18n", "~> 4.0.1"
 gem "authlogic", "~> 3.4.0"

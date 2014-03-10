@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/jay3126/i18n-custom.git
+  revision: ac81e773a9e5309a49fa1f90eab5c1f8ca4deab9
+  specs:
+    i18n (0.6.9)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -120,7 +126,6 @@ GEM
     headless (1.0.1)
     hike (1.2.3)
     htmlentities (4.3.1)
-    i18n (0.6.9)
     jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
@@ -338,7 +343,7 @@ DEPENDENCIES
   guard-rspec
   haml (~> 3)
   headless
-  i18n (~> 0.6.9)
+  i18n!
   jquery-rails
   mysql2
   nokogiri
