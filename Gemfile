@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 # Uncomment the database that you have configured in config/database.yml
 # ----------------------------------------------------------------------
-# gem 'mysql2'
+gem 'mysql2'
 # gem 'sqlite3'
-gem 'pg'
+#gem 'pg'
 
 # Removes a gem dependency
 def remove(name)
@@ -37,7 +37,7 @@ group :development do
     gem 'thin'
     gem 'quiet_assets'
     gem 'capistrano', '~> 3.1.0'
-    gem 'capistrano_colors'
+#    gem 'capistrano_colors'
     gem 'guard'
     gem 'guard-rspec'
     gem 'guard-rails'
@@ -81,3 +81,10 @@ group :assets do
 end
 
 gem 'turbo-sprockets-rails3'
+#gem 'valium'
+gem 'rails-observers'
+gem 'paper_trail', '~> 3.0.0'
+gem "protected_attributes", "~> 1.0.5"
+gem "i18n", "~> 0.6.9"
+gem "rails-i18n", "~> 4.0.1"
+gem "authlogic", "~> 3.4.0"

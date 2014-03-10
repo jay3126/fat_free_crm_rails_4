@@ -9,6 +9,7 @@
 #------------------------------------------------------------------------------
 
 # Turn off until https://github.com/rails/rails/issues/13164 is fixed
+I18n.load_path += Dir[Rails.root.join('config', 'locales', '**/*.{rb,yml}')]
 I18n.config.enforce_available_locales = false
 Rails.application.config.i18n.fallbacks = true
 

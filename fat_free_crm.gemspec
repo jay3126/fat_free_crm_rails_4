@@ -23,8 +23,8 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'paperclip'
   # Manually added paperclip gem dependency "cocaine" in order to fix load error: "no such file to load -- cocaine"
   gem.add_dependency 'cocaine'
-  gem.add_dependency 'paper_trail'#,         '~> 2.7.0' # not ready for v3 yet
-  gem.add_dependency 'authlogic',           '3.4.0'
+  gem.add_dependency 'paper_trail',         '~> 3.0.0'
+  gem.add_dependency 'authlogic',           '~> 3.4.0'
   gem.add_dependency 'acts_as_commentable', '~> 4.0.1'
   gem.add_dependency 'acts-as-taggable-on', '~> 3.0.1'
   gem.add_dependency 'dynamic_form'
@@ -38,7 +38,11 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'nokogiri'
   gem.add_dependency 'responds_to_parent',  '>= 1.1.0'
   gem.add_dependency 'rails3-jquery-autocomplete'
-  gem.add_dependency 'valium'
+  gem.add_dependency 'rails-observers'
+  gem.add_dependency 'protected_attributes', '~> 1.0.5'
+  gem.add_dependency 'i18n',                 '~> 0.6.9'
+  gem.add_dependency 'rails-i18n',           '~> 4.0.1'
+#  gem.add_dependency 'valium'
   gem.add_dependency 'psych', '~> 1'        if RUBY_VERSION.to_f < 2.0
   gem.add_dependency 'thor'
 
