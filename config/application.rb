@@ -43,7 +43,7 @@ module FatFreeCRM
 
     # Add migrations from all engines
     Railties.engines.each do |engine|
-      #config.paths['db/migrate'] += engine.paths['db/migrate'].existent
+      config.paths['db/migrate'] << engine.paths['db/migrate'].existent
     end
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
