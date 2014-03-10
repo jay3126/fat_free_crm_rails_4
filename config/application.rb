@@ -47,7 +47,7 @@ module FatFreeCRM
     end
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
-    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '**/*.{rb,yml}').to_s]
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**/*.{rb,yml}').to_s]
     config.i18n.fallbacks = true
 
     # Only load the plugins named here, in the order given (default is alphabetical).
