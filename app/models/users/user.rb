@@ -117,7 +117,12 @@ class User < ActiveRecord::Base
 
   #----------------------------------------------------------------------------
   def preference
-    @preference ||= Preference.new(:user => self)
+    if not @preference.present?
+      @preference = Preference.new
+      @preference.user = self
+    end
+
+    @preference
   end
   alias :pref :preference
 

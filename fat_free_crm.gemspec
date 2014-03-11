@@ -42,6 +42,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'protected_attributes', '~> 1.0.5'
   gem.add_dependency 'i18n',                 '~> 0.6.9'
   gem.add_dependency 'rails-i18n',           '~> 4.0.1'
+  gem.add_dependency 'scrypt'
 #  gem.add_dependency 'valium'
   gem.add_dependency 'psych', '~> 1'        if RUBY_VERSION.to_f < 2.0
   gem.add_dependency 'thor'
