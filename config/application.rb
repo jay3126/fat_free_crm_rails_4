@@ -8,12 +8,14 @@ require File.expand_path('../boot', __FILE__)
 require 'rubygems'
 require 'rails/all'
 
-if defined?(Bundler)
-  # If you precompile assets before deploying to production, use this line
-  Bundler.require(*Rails.groups(:assets => %w(development test)))
-  # If you want your assets lazily compiled in production, use this line
-  # Bundler.require(:default, :assets, Rails.env)
-end
+# if defined?(Bundler)
+#   # If you precompile assets before deploying to production, use this line
+#   Bundler.require(*Rails.groups(:assets => %w(development test)))
+#   # If you want your assets lazily compiled in production, use this line
+#   # Bundler.require(:default, :assets, Rails.env)
+# end
+
+Bundler.require(:default, Rails.env)
 
 # Override Rails Engines so that plugins have higher priority than the Application
 require 'fat_free_crm/gem_ext/rails/engine'
@@ -30,8 +32,6 @@ module FatFreeCRM
 
     # Prevent Field class from being reloaded more than once as this clears registered customfields
     config.autoload_once_paths += [File.expand_path("../app/models/fields/field.rb", __FILE__)]
-
-    config.secret_key_base = "6c10500ef5961152d7b2e21b857434ffa808dd474215a724bacf24d4d6f14a7fb5a24b9c118df73a3bc7075667637f6ae0d593778ecdd64bfbcc1d87148db160"
 
     # Activate observers that should always be running.
     unless ARGV.join.include?('assets:precompile')

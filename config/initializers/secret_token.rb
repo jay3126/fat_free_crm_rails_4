@@ -22,4 +22,5 @@
 if FatFreeCRM.application?
   require 'fat_free_crm/secret_token_generator'
   FatFreeCRM::SecretTokenGenerator.setup!
+  FatFreeCRM::Application.config.secret_key_base = "6c10500ef5961152d7b2e21b857434ffa808dd474215a724bacf24d4d6f14a7fb5a24b9c118df73a3bc7075667637f6ae0d593778ecdd64bfbcc1d87148db160"
 end

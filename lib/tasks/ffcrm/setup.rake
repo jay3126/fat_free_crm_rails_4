@@ -18,7 +18,7 @@ namespace :ffcrm do
 
       # Don't continue unless user typed y(es)
       if proceed =~ /y(?:es)*/i
-        #Rake::Task["db:migrate"].invoke
+        Rake::Task["db:migrate"].invoke
         Rake::Task["ffcrm:setup:admin"].invoke
       else
         puts "Aborted setup."

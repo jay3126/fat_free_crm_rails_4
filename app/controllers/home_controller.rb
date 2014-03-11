@@ -97,7 +97,7 @@ class HomeController < ApplicationController
     options[:duration] ||= activity_duration
     options[:max]      ||= 500
 
-    Version.latest(options).visible_to(current_user)
+    PaperTrail::Version.latest(options).visible_to(current_user)
   end
 
   #----------------------------------------------------------------------------

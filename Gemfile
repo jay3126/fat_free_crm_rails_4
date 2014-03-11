@@ -89,3 +89,4 @@ gem "i18n", :git => 'git://github.com/jay3126/i18n-custom.git'
 gem "rails-i18n", "~> 4.0.1"
 gem "authlogic", "~> 3.4.0"
 gem 'scrypt'
+gem 'railties', git: 'git://github.com/jay3126/railties-4.0.3.git'
